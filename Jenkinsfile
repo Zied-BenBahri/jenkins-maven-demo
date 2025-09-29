@@ -1,5 +1,8 @@
 pipeline {
   agent any
+  tools {
+    maven 'Maven_3_9_6'   // 👈 le nom défini dans Tools
+  }
   stages {
     stage('Checkout') {
       steps {
